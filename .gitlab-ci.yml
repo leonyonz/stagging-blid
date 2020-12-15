@@ -13,7 +13,7 @@ build_env:
   stage: build
   before_script:
     - gem install bundler
-    - bundle install --path vendor
+    - bundle install
   script:
     - bundle exec jekyll build
   artifacts:
