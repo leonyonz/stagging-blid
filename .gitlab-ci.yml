@@ -12,6 +12,7 @@ cache:
 build_env:
   stage: build
   before_script:
+    - gem install bundler
     - bundle install --path vendor
   script:
     - bundle exec jekyll build
